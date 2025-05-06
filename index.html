@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um Consultor Ozonteck 2.0 | Perfumaria Inovadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(217, 119, 6, 0.1), 0 10px 10px -5px rgba(217, 119, 6, 0.08);
+        }
+        
+        .btn-cta {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(217, 119, 6, 0.3);
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(217, 119, 6, 0.4);
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom right, transparent 49%, #f9fafb 50%), 
+                        linear-gradient(to top right, #f9fafb 49%, transparent 50%);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .tech-icon {
+            filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.6));
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/">
+                            <img class="h-11" src="assets/logo.png" alt="Ozonteck 2.0 Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#opportunity" class="text-gray-700 hover:text-amber-600 px-3 py-2 font-medium">Oportunidade</a>
+                    <a href="#products" class="text-gray-700 hover:text-amber-600 px-3 py-2 font-medium">Produtos</a>
+                    <a href="#about" class="text-gray-700 hover:text-amber-600 px-3 py-2 font-medium">Sobre Nós</a>
+                    <a href="#contact" class="text-gray-700 hover:text-amber-600 px-3 py-2 font-medium">Contato</a>
+                    <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="bg-amber-500 text-white px-6 py-2 rounded-full font-medium hover:bg-amber-600 transition duration-300">Quero Ser Consultor</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-amber-600">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#opportunity" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600">Oportunidade</a>
+                <a href="#products" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600">Produtos</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600">Sobre Nós</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600">Contato</a>
+                <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="block w-full text-center bg-amber-500 text-white px-6 py-2 rounded-full font-medium hover:bg-amber-600 mt-2">Quero Ser Consultor</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-24 pb-20 md:pt-32 md:pb-28 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-900 rounded-full filter blur-3xl opacity-50 w-1/2 h-1/2 transform -translate-x-1/4 -translate-y-1/4"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <div class="text-center md:text-left mb-10 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Transforme Vidas com <span class="text-amber-300">Fragrâncias Inovadoras</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-200 mb-8">
+                        Seja um Consultor Ozonteck 2.0 e faça parte da revolução na perfumaria!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="btn-cta bg-amber-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-600">
+                            Quero Ser Consultor <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="https://wa.me/5588997011112" class="btn-cta border-2 border-amber-300 text-amber-300 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-300 hover:text-gray-900">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+                <div class="fade-in flex justify-center">
+                    <img src="assets/001.webp" alt="Ozonteck Perfumes" class="rounded-2xl shadow-2xl mx-auto w-full max-w-lg md:max-w-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="bg-gray-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="bg-amber-100 rounded-full p-4 mb-2">
+                        <i class="fas fa-award text-amber-600 text-3xl"></i>
+                    </div>
+                    <p class="font-bold text-gray-800">Classificação Parfum</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-amber-100 rounded-full p-4 mb-2">
+                        <i class="fas fa-percentage text-amber-600 text-3xl"></i>
+                    </div>
+                    <p class="font-bold text-gray-800">30% Concentração</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-amber-100 rounded-full p-4 mb-2">
+                        <i class="fas fa-medal text-amber-600 text-3xl"></i>
+                    </div>
+                    <p class="font-bold text-gray-800">Selo Premium Fix</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-amber-100 rounded-full p-4 mb-2">
+                        <i class="fas fa-leaf text-amber-600 text-3xl"></i>
+                    </div>
+                    <p class="font-bold text-gray-800">Ingredientes Selecionados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Opportunity Section -->
+    <section id="opportunity" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <span class="text-amber-600">Oportunidade Única</span> para Empreendedores
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Junte-se à Ozonteck 2.0 e transforme sua paixão por perfumaria em um negócio lucrativo
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Ganhos de até 200%</h3>
+                    <p class="text-gray-600">
+                        Tenha margens de lucro atrativas vendendo produtos premium com alta demanda no mercado.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-clock text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Flexibilidade Total</h3>
+                    <p class="text-gray-600">
+                        Trabalhe no seu próprio ritmo, de onde quiser, conciliando com seus outros compromissos.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Crescimento Contínuo</h3>
+                    <p class="text-gray-600">
+                        Acesse treinamentos exclusivos e uma rede de apoio para impulsionar seus resultados.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gradient-to-r from-gray-800 to-black rounded-2xl p-8 md:p-12 text-white">
+                <div class="md:flex items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Pronto para transformar sua vida?</h3>
+                        <p class="text-lg md:text-xl text-gray-300">
+                            Cadastre-se agora e comece sua jornada como Consultor Ozonteck 2.0!
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 text-center md:text-right">
+                        <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="inline-block bg-amber-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-600 transition duration-300">
+                            Cadastre-se Agora <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="section-divider"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <div class="mb-12 md:mb-0">
+                    <img src="assets/GRECIA.png" alt="Tecnologia Ozonteck" class="rounded-2xl shadow-xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        A <span class="text-amber-600">Revolução</span> na Perfumaria
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        A Ozonteck 2.0 combina as melhores tecnologias para criar fragrâncias que vão além do perfume comum. Nossas formulações exclusivas oferecem:
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-100 text-amber-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Fixação premium com selo PREMIUM FIX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-100 text-amber-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">30% de concentração - classificação Parfum</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-100 text-amber-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Ingredientes selecionados de alta qualidade</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-amber-100 text-amber-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Design moderno e frascos sofisticados</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg text-gray-600">
+                        Mais que perfumes, são fragrâncias que encantam os sentidos, promovem bem-estar e permitem a verdadeira autoexpressão.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-20 grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="tech-icon text-amber-500 text-5xl mb-6">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Nanotecnologia</h3>
+                    <p class="text-gray-600">
+                        Partículas nanoencapsuladas que garantem maior durabilidade e fixação da fragrância.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="tech-icon text-amber-500 text-5xl mb-6">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Ozônio</h3>
+                    <p class="text-gray-600">
+                        Tecnologia exclusiva que potencializa as notas olfativas e proporciona sensação de frescor.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="tech-icon text-amber-500 text-5xl mb-6">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bem-Estar</h3>
+                    <p class="text-gray-600">
+                        Fragrâncias que estimulam sensações positivas e melhoram o humor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nossos <span class="text-amber-600">Produtos</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Descubra as essências que refletem personalidade, elegância, força e sofisticação.
+                </p>
+            </div>
+            
+            <!-- Updated Product Section Layout -->
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-500 flex flex-col">
+                    <img src="assets/PERFUMES FEMININOS.png" alt="Perfumes Femininos Ozonteck" class="w-full h-auto object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Essência da Feminilidade</h3>
+                        <p class="text-gray-600 mb-4 text-center flex-grow">
+                            Fragrâncias criadas para refletir sua essência, do delicado ao sofisticado, do romântico ao empoderado. Encontre a que combina com você!
+                        </p>
+                        <div class="flex flex-col justify-center items-center mt-4">
+                            <span class="bg-amber-100 text-amber-800 text-xs font-medium p-1 rounded">SELO</span>
+                            <span class="text-amber-600 font-bold mr-4 px-2.5 py-0.5">PREMIUM FIX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-500 flex flex-col">
+                     <img src="assets/PERFUMES MASCULINOS.png" alt="Perfumes Masculinos Ozonteck" class="w-full h-auto object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 text-center">Força e Sofisticação</h3>
+                        <p class="text-gray-600 mb-4 text-center flex-grow">
+                            Fragrâncias masculinas criadas para homens que deixam sua marca. Do clássico ao ousado, escolha a que combina com seu estilo.
+                        </p>
+                         <div class="flex flex-col justify-center items-center mt-4">
+                             <span class="bg-amber-100 text-amber-800 text-xs font-medium p-1 rounded">SELO</span>
+                            <span class="text-amber-600 font-bold mr-4 px-2.5 py-0.5">PREMIUM FIX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Updated Product Section Layout -->
+            
+            <div class="mt-12 text-center">
+                <p class="text-xl text-gray-700 mb-6">
+                    Cada fragrância Ozonteck 2.0 é uma extensão da personalidade, criada para destacar sua essência única.
+                </p>
+                <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="inline-block bg-amber-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-600 transition duration-300">
+                    Quero Representar Esses Produtos <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <span class="text-amber-600">Depoimentos</span> de Consultores
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Veja o que nossos consultores estão dizendo sobre a Ozonteck 2.0
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-13 rounded-full" src="assets/ana.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Ana Carolina</h4>
+                            <p class="text-amber-600">Consultora Ozonteck</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Em apenas 3 meses consegui triplicar minha renda vendendo os perfumes Ozonteck. A qualidade dos produtos fala por si e os clientes sempre voltam!"
+                    </p>
+                    <div class="mt-4 text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-13 rounded-full" src="assets/ricardo.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Ricardo Almeida</h4>
+                            <p class="text-amber-600">Consultor Ozonteck</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "A combinação de tecnologia e qualidade dos perfumes Ozonteck é impressionante. Nunca foi tão fácil vender produtos premium com margens tão boas."
+                    </p>
+                     <div class="mt-4 text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-13 rounded-full" src="assets/fernanda.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-900">Fernanda Souza</h4>
+                            <p class="text-amber-600">Consultora Ozonteck</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "A Ozonteck mudou minha vida! Comecei como uma renda extra e hoje é minha principal fonte de renda. A fixação dos perfumes é realmente premium como prometem."
+                    </p>
+                     <div class="mt-4 text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form Section -->
+    <section id="form" class="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                <div class="mb-12 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Pronto para começar sua jornada como <span class="text-amber-300">Consultor Ozonteck 2.0</span>?
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Realize seu cadastro e nossa equipe entrará em contato com todos os detalhes para você começar!
+                    </p>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-white">Benefícios Exclusivos:</h3>
+                        <ul class="space-y-3 text-gray-200">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-400 mt-1 mr-3"></i>
+                                <span>Treinamento completo para começar a vender</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-400 mt-1 mr-3"></i>
+                                <span>Material de apoio e catálogo digital</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-400 mt-1 mr-3"></i>
+                                <span>Acompanhamento personalizado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-400 mt-1 mr-3"></i>
+                                <span>Programa de bonificações e premiações</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-2">
+                        <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="block w-full">
+                            <button class="w-full bg-amber-500 text-white px-6 py-4 rounded-lg font-bold hover:bg-amber-600 transition duration-300">
+                                Quero Ser Consultor <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <img src="assets/VISÃO.png" alt="Liderança Ozonteck" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Fale <span class="text-amber-600">Conosco</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tem dúvidas ou precisa de mais informações? Estamos aqui para ajudar!
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg text-center">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-phone-alt text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Telefone/WhatsApp</h3>
+                    <p class="text-gray-600 mb-2">
+                        (88)99701-1112
+                    </p>
+                    <a href="https://wa.me/5588997011112" class="text-amber-600 font-medium hover:text-amber-700 inline-flex items-center">
+                        <button class="w-full bg-amber-500 text-white p-3 rounded-2xl font-bold hover:bg-amber-600 transition duration-300">
+                            Enviar mensagem <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </a>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg text-center">
+                    <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-envelope text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">E-mail</h3>
+                    <p class="text-gray-600 mb-2">
+                        italobpl94@gmail.com
+                    </p>
+                    <a href="mailto:italobpl94@gmail.com" class="text-amber-600 font-medium hover:text-amber-700 inline-flex items-center">
+                        <button class="w-full bg-amber-500 text-white p-3 rounded-2xl font-bold hover:bg-amber-600 transition duration-300">
+                            Enviar e-mail <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </a>
+                </div>
+                
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h3 class="text-xl font-bold text-gray-900 mb-6">Siga-nos nas Redes Sociais</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.facebook.com/italobandeira.ozonteck" target="_blank" class="text-gray-600 hover:text-amber-600">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/italobpl/" target="_blank" class="text-gray-600 hover:text-amber-600">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@grupoozonteckoficial/featured" target="_blank" class="text-gray-600 hover:text-amber-600">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logo.png" alt="Ozonteck 2.0 Logo" class="h-10 mb-4 filter brightness-0 invert">
+                    <p class="text-gray-400">
+                        A revolução na perfumaria. Produtos premium com qualidade e preço acessível.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#opportunity" class="text-gray-400 hover:text-amber-400">Oportunidade</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-amber-400">Produtos</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-400">Sobre Nós</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-amber-400">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-amber-400"></i>
+                            <span>(88) 99701-1112</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-amber-400"></i>
+                            <span>italobpl94@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Cadastre-se</h3>
+                    <p class="text-gray-400 mb-4">
+                        Não perca tempo, seja um consultor Ozonteck 2.0!
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://office.grupoozonteck.com/register?sponsor=4329c4f6-614b-43ba-9baf-515f709fded2" target="_blank" class="block w-full">
+                            <button class="w-full bg-amber-500 text-white px-6 py-4 rounded-full font-bold hover:bg-amber-600 transition duration-300">
+                                Quero Ser Consultor <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 Executivo Ozonteck 2.0. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://www.facebook.com/italobandeira.ozonteck" target="_blank" class="text-gray-400 hover:text-amber-400">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/italobpl/" target="_blank" class="text-gray-400 hover:text-amber-400">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@grupoozonteckoficial/featured" target="_blank" class="text-gray-400 hover:text-amber-400">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 64, // Adjusted offset for fixed nav height
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                }
+            });
+        };
+        
+        // Set initial state for fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5588997011112" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center text-3xl hover:bg-[#128C7E] transition duration-300 z-50" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
